@@ -1,0 +1,27 @@
+{
+  "groups": [
+    {
+      "name": "db",
+      "type": "jobtest.task3.db.DbConfig",
+      "sourceType": "jobtest.task3.db.DbConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "db.password",
+      "type": "java.lang.String",
+      "sourceType": "jobtest.task3.db.DbConfig"
+    },
+    {
+      "name": "db.url",
+      "type": "java.lang.String",
+      "sourceType": "jobtest.task3.db.DbConfig"
+    },
+    {
+      "name": "db.user",
+      "type": "java.lang.String",
+      "sourceType": "jobtest.task3.db.DbConfig"
+    }
+  ],
+  "hints": []
+}
