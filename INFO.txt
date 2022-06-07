@@ -1,0 +1,33 @@
+- В архиве: 
+	db\ - схема БД
+	task3\ - web приложение для task_03
+	Test_23_05_22\ - task_01, task_02, task_03 - заполнение БД, файлы с данными: logins.csv, postings.csv
+
+	
+- Нужно иметь: mysql, локальный сервер, среду разработки, java  
+- В application.properties задать параметры подключения к базе:
+	db.url=
+	db.user=
+	db.password=
+
+- Для запуска web приложения выполнить:
+1. Выполнить запросы mysql из файла: db\schema.sql
+2. Выполнить команду "mvnw spring-boot:run"
+3. Ввести параметры подключения к базе
+	Input jdbcURL:
+	Input username:
+	Input password:
+
+- Для загрузки данных из файлов в БД выполнить:
+1. В настройках проекта Test_23_05_22 добавить в 
+Library -> Classpath библиотеку Test_23_05_22\WEB-INF\lib\mysql-connector-java-8.0.27.jar
+2. Запустить приложение Test_23_05_22\src\task_03\CsvConverter.java
+
+- для просмотра postings из БД через API выполнить:
+1. Запустить браузер, перейти на localhost
+2. Выполнить запрос для вывода данных, указав промежуток времени в формате "ДД.ММ.ГГ" через "-" и 
+значения авторизованной поставки (true/false) при необходимости, добавив после localhost: 
+	"/supply?from_to=01.01.22-31.03.22&is_active=true"
+	или
+	"/supply?from_to=01.01.22-31.03.22"
+

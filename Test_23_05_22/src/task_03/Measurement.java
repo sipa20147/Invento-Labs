@@ -1,0 +1,35 @@
+package task_03;
+
+public class Measurement {
+	private int id;
+	private String name;
+	
+	public Measurement() {}
+
+	public Measurement(int id, String name) {
+		this.id = id;
+		this.name = name;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "Measurement [id=" + id + ", name=" + name + "]";
+	}
+		
+}
